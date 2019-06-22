@@ -8,7 +8,7 @@ class CreateArticulosTable extends Migration
 
     public function up()
     {
-        Schema::create('Articulos', function(Blueprint $table) {
+        Schema::create('articulos', function(Blueprint $table) {
             $table->increments('id');
             $table->string('titulo',100);
             $table->text('resumen');
@@ -23,6 +23,6 @@ class CreateArticulosTable extends Migration
 
     public function down()
     {
-        Schema::drop('Articulos');
+        Schema::drop('articulos');
     }
 }

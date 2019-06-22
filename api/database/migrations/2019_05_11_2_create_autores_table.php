@@ -8,7 +8,7 @@ class CreateAutoresTable extends Migration
 
     public function up()
     {
-        Schema::create('Autores', function(Blueprint $table) {
+        Schema::create('autores', function(Blueprint $table) {
             $table->increments('id');
             $table->string('nombre',30);
             $table->string('primer_ap',20);
@@ -25,6 +25,6 @@ class CreateAutoresTable extends Migration
 
     public function down()
     {
-        Schema::drop('Autores');
+        Schema::drop('autores');
     }
 }

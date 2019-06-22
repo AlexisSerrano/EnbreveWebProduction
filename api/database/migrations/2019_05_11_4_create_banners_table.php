@@ -8,7 +8,7 @@ class CreateBannersTable extends Migration
 
     public function up()
     {
-        Schema::create('Banners', function(Blueprint $table) {
+        Schema::create('banners', function(Blueprint $table) {
             $table->increments('id');
             $table->string('imagen',70);
             $table->string('empresa',200);
@@ -23,6 +23,6 @@ class CreateBannersTable extends Migration
 
     public function down()
     {
-        Schema::drop('Banners');
+        Schema::drop('banners');
     }
 }

@@ -8,7 +8,7 @@ class CreateNoticiasTable extends Migration
 
     public function up()
     {
-        Schema::create('Noticias', function(Blueprint $table) {
+        Schema::create('noticias', function(Blueprint $table) {
             $table->increments('id');
             $table->string('titulo',100);
             $table->text('resumen');
@@ -21,11 +21,11 @@ class CreateNoticiasTable extends Migration
             $table->foreign('usuario')->references('id')->on('usuarios')->onDelete('restrict');
             $table->foreign('seccion')->references('id')->on('secciones')->onDelete('restrict');
         });
-        DB::statement('ALTER TABLE Noticias ADD FULLTEXT fulltext_index (titulo, resumen, contenido)');
+        DB::statement('ALTER TABLE noticias ADD FULLTEXT fulltext_index (titulo, resumen, contenido)');
     }
 
     public function down()
     {
-        Schema::drop('Noticias');
+        Schema::drop('noticias');
     }
 }

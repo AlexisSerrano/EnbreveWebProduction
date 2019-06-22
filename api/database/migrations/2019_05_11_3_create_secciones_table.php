@@ -8,7 +8,7 @@ class CreateSeccionesTable extends Migration
 
     public function up()
     {
-        Schema::create('Secciones', function(Blueprint $table) {
+        Schema::create('secciones', function(Blueprint $table) {
             $table->increments('id');
             $table->string('titulo',50);
             $table->timestamps();
@@ -18,6 +18,6 @@ class CreateSeccionesTable extends Migration
 
     public function down()
     {
-        Schema::drop('Secciones');
+        Schema::drop('secciones');
     }
 }

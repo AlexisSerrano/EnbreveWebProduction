@@ -8,7 +8,7 @@ class CreateMultimediaTable extends Migration
 
     public function up()
     {
-        Schema::create('Multimedia', function(Blueprint $table) {
+        Schema::create('multimedia', function(Blueprint $table) {
             $table->increments('id');
             $table->string('url',100);
             $table->string('tipo',100);
@@ -21,6 +21,6 @@ class CreateMultimediaTable extends Migration
 
     public function down()
     {
-        Schema::drop('Multimedia');
+        Schema::drop('multimedia');
     }
 }
