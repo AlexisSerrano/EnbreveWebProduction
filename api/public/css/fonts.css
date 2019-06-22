@@ -1,0 +1,35 @@
+@font-face {
+    font-family: 'Poppins-Light';
+    src:'fonts/Poppins-Light.otf' format('opentype');
+}
+
+@font-face {
+  font-family: 'Poppins-Regular';
+  src:'fonts/Poppins-Regular.otf' format('opentype');
+}
+
+@font-face {
+  font-family: 'Poppins-Medium';
+  src:'fonts/Poppins-Medium.otf' format('opentype');
+}
+
+@font-face {
+  font-family: 'Poppins-SemiBold';
+  src:'fonts/Poppins-SemiBold.otf' format('opentype');
+}
+
+@font-face {
+  font-family: 'Poppins-Bold';
+  src:'fonts/Poppins-Bold.otf' format('opentype');
+}
+
+@font-face {
+  font-family: 'Poppins-ExtraBold';
+  src:'fonts/Poppins-ExtraBold.otf' format('opentype');
+}
+
+
+@font-face {
+  font-family: 'Poppins-Black';
+  src:'fonts/Poppins-Black.otf' format('opentype');
+}
