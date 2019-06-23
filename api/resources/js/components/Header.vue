@@ -3,7 +3,7 @@
         <top-header/>
         <b-container fluid>
             <b-container id="logoContainer">
-                <b-img id="logo" src="http://enbreve.info/img/logo.png" class="py-3"></b-img>
+                <b-img id="logo" :src="require('#img/logo.png')" class="py-3"></b-img>
             </b-container>
         </b-container>
        <navbar/>  

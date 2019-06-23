@@ -26,7 +26,9 @@
 							<span class="info">contacto@enbreve.info</span>
 						</b-col>
 					</b-row>
-					<b-row id="formContainer" class="justify-content-center pt-3 pb-4 mb">
+					<b-row id="formContainer" class="justify-content-center pt-3 pb-4 mb"
+						:style="`backgroundImage:url(${require('#img/xalapa.jpg')})`"
+					>
 						<b-col md="12" class="text-center">
 							<span id="titulo">ANÚNCIATE CON NOSOTROS</span>
 						</b-col>
@@ -121,7 +123,6 @@
 		color: $dark;	
 	}
 	#formContainer{
-		background-image: url('http://enbreve.info/img/xalapa.jpg');
 		background-size: cover;
 		background-position: center;
 		box-shadow: 0rem 0rem 1.125rem 0rem #79797970;

@@ -7,7 +7,6 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <link rel="icon" href="{{asset('favicon.ico')}}">
     <link rel="stylesheet" href="{{asset('css/app.css')}}">
-    <link rel="stylesheet" href="{{asset('css/fonts.css')}}">
     <meta property="og:title" content="Cultura" />
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="enbreve.info" />

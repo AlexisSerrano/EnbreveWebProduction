@@ -1,7 +1,9 @@
 <template>
     <b-container>
-        <div id="contacto" class="pt-3 pb-4 px-4">
-            <b-img class="mb-2" id="logo" src="public/images/logo-gris.png"/>
+        <div id="contacto" class="pt-3 pb-4 px-4"
+            :style="`backgroundImage:url(${require('#img/xalapa.jpg')})`"
+        >
+            <b-img class="mb-2" id="logo" :src="require('#img/logo-gris.png')"/>
             <span id="descripcion">Anúnciate con nosotros: negocios, eventos, artículos de interés general.</span>
             <b-button @click="verContacto" size="sm" variant="danger" class="botonContacto">Contáctanos</b-button>
         </div>
@@ -26,7 +28,6 @@
         width: 7.4rem;
     }
     #contacto{
-        background-image: url('/resources/assets/img/xalapa.jpg');
         background-position: center;
         background-size: cover;
         display: flex;

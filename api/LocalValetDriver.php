@@ -25,10 +25,17 @@ class LocalValetDriver extends LaravelValetDriver
     */
     public function isStaticFile($sitePath, $siteName, $uri)
     {
-        if (file_exists($staticFilePath = $sitePath.$uri)) {
+        if (file_exists($staticFilePath = $sitePath.'/public'.$uri)
+           && is_file($staticFilePath)) {
             return $staticFilePath;
         }
-
+        $storageUri = $uri;
+        if (strpos($uri, '/storage/') === 0) {
+            $storageUri = substr($uri, 8);
+        }
+        if ($this->isActualFile($storagePath = $sitePath.'/storage/'.$storageUri)) {
+            return $storagePath;
+        }
         return false;
     }
 

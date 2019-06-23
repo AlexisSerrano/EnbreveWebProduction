@@ -3,10 +3,10 @@
         <b-container>
             <b-row id="navbar">
                 <b-col class="text-center text-md-left" cols="12" md="9">
-                    <b-link href="/" class="links">INICIO</b-link>
-                    <b-link to="/sociales" class="links">SOCIALES</b-link>
-                    <b-link to="/cultura" class="links">CULTURA</b-link>
-                    <b-link to="/articulos" class="links">ARTÍCULOS</b-link>          
+                    <b-link href="/" class="links" :class="actual=='/'?'active':''">INICIO</b-link>
+                    <b-link to="/sociales" class="links" :class="actual=='/sociales'?'active':''">SOCIALES</b-link>
+                    <b-link to="/cultura" class="links" :class="actual=='/cultura'?'active':''">CULTURA</b-link>
+                    <b-link to="/articulos" class="links" :class="actual=='/articulos'?'active':''">ARTÍCULOS</b-link>          
                 </b-col>
                 <transition name="zoom" mode="out-in" v-on:before-enter="focus">
                     <b-col v-if="!buscador" style="animation-duration: 0.3s" key="buscadorClose" md="3" class="buscador d-none d-md-flex">
@@ -29,7 +29,8 @@
         data() {
             return {
                 buscador: false,
-                busqueda:''
+                busqueda:'',
+                actual:window.location.pathname
             }
         },
         methods:{

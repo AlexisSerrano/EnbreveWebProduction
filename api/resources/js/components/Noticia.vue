@@ -110,7 +110,7 @@
         },
         methods:{
             verNoticia(){
-                window.location = `/${this.tipoItem}/${this.item.id}`
+                window.location = `/${this.tipoItem}/${this.item.titulo}`
             }
         },
         computed:{

@@ -3,7 +3,7 @@
         <b-container>
             <b-row>
                 <b-col lg="3" class="enbreve align-items-lg-start align-items-center mb-lg-0 mb-3">
-                    <b-img id="logo" src="http://enbreve.info/img/logo-gris.png"/>
+                    <b-img id="logo" :src="require('#img/logo-gris.png')"/>
                     <span class="texto text-center text-lg-left descripcion">Medio de comunicación en línea con información social y cultural de Xalapa, artículos de interés general y cartelera de eventos.</span>
                 </b-col>
                 <b-col md="4" lg="3" class="seccion mt-md-0 mt-2">

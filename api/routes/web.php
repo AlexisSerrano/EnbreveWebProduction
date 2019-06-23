@@ -38,12 +38,6 @@ Route::get('/busqueda/{busqueda}', function ($busqueda) {
     return view('busqueda',compact('busqueda'));
 });
 
-Route::get('/noticia/{id}', function ($id) {
-    $tipoItem = 'noticia';
-    return view('noticia',compact('id','tipoItem'));
-});
+Route::get('/noticia/{titulo}','SitioController@getNoticia');
 
-Route::get('/articulo/{id}', function ($id) {
-    $tipoItem = 'articulo';
-    return view('articulo',compact('id','tipoItem'));
-});
+Route::get('/articulo/{titulo}','SitioController@getArticulo');
